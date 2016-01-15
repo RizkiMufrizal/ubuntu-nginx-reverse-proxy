@@ -34,8 +34,8 @@ echo "instalasi nginx"
 apt-get install -y nginx
 
 echo "Konfigurasi reverse proxy nginx"
-cp /vagrant/config/nginx-proxy /etc/nginx/sites-available/example
-ln -s /etc/nginx/sites-available/example /etc/nginx/sites-enabled/example
+cp /vagrant/config/nginx-proxy /etc/nginx/sites-available/reverseproxy
+ln -s /etc/nginx/sites-available/reverseproxy /etc/nginx/sites-enabled/reverseproxy
 rm /etc/nginx/sites-enabled/default
 service nginx restart
 
