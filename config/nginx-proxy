@@ -1,7 +1,7 @@
 server {
     listen 80;
 
-    server_name debian.nginx.com
+    server_name ubuntu.nginx.com
     access_log /var/log/nginx/access.log;
 
     location / {
